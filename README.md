@@ -51,5 +51,6 @@ For questions, feedback, or collaboration, feel free to reach out at [harkinsam2
 
 ## License
 
-This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) file for details.
+This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Harkinsam/Mortgage-Calculator/blob/main/LICENSE) file for details.
+
 
