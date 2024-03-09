@@ -3,14 +3,14 @@ package com.codewithmosh;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class MortageCalculator {
+public class MortgageCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int principal;
         do {
             System.out.print("Principal: ");
             principal = scanner.nextInt();
-            if (principal < 1000 || principal > 100000) {
+            if (principal < 1000 || principal > 1000000) {
                 System.out.println("Enter a number between 1000 and 1000000");
             }
         } while (principal < 1000 || principal > 1000000);
@@ -37,7 +37,7 @@ public class MortageCalculator {
         years = years * 12;
 
 
-        double mortgage = principal * (interest_Rate * Math.pow(1 + interest_Rate, years)) / Math.pow(1 + interest_Rate, years) - 1;
+        double mortgage = principal * (interest_Rate * Math.pow(1 + interest_Rate, years)) / (Math.pow(1 + interest_Rate, years) - 1);
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         String mortgagesCurrency = currency.format(mortgage);
         System.out.println("Mortgage: " + mortgagesCurrency);
